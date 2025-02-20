@@ -1,24 +1,24 @@
 
-# Fingertip Detection & Fingerprint Extraction
+# CV-Paysys-Competition
 
 ## Overview
 
-This project focuses on **Fingertip Detection** and **Fingerprint Extraction** using  **YOLO v11** . The challenge involved processing a dataset of right and left-hand palm images, training an object detection model, identifying fingertips, cropping them, and extracting biometric fingerprints.
+This project focuses on **Fingertip Detection** and **Fingerprint Extraction** using **YOLO v11**. The challenge involved processing a dataset of right and left-hand palm images, training an object detection model, identifying fingertips, cropping them, and extracting biometric fingerprints.
 
 ## Approach
 
 ### 1. Model Selection & Training
 
-* Leveraged experience with **YOLO models** from the Final Year Project.
-* Used **YOLO v11** for precise fingertip detection.
-* Utilized **Roboflow** for dataset management and preprocessing.
-* Trained the model on a custom dataset for 30 epochs.
+- Leveraged experience with **YOLO models** from the Final Year Project.
+- Used **YOLO v11** for precise fingertip detection.
+- Utilized **Roboflow** for dataset management and preprocessing.
+- Trained the model on a custom dataset for 30 epochs.
 
 ### 2. Image Processing & Feature Extraction
 
-* Applied **OpenCV** for image preprocessing and segmentation.
-* Cropped detected fingertip regions for further analysis.
-* Extracted high-definition  **biometric fingerprint features** .
+- Applied **OpenCV** for image preprocessing and segmentation.
+- Cropped detected fingertip regions for further analysis.
+- Extracted high-definition **biometric fingerprint features**.
 
 ## Sample Images
 
@@ -26,21 +26,28 @@ This project focuses on **Fingertip Detection** and **Fingerprint Extraction** u
 
 Here are some examples of the cropped fingertip images obtained after detection:
 
-![Cropped Fingertip 1](https://chatgpt.com/c/Cropped_Fingerprints/cropped_fingertip1.png)
-![Cropped Fingertip 2](https://chatgpt.com/c/Cropped_Fingerprints/cropped_fingertip2.png)
-![Cropped Fingertip 3](https://chatgpt.com/c/Cropped_Fingerprints/cropped_fingertip3.png)
-![Cropped Fingertip 4](https://chatgpt.com/c/Cropped_Fingerprints/cropped_fingertip4.png)
-![Cropped Fingertip 5](https://chatgpt.com/c/Cropped_Fingerprints/cropped_fingertip5.png)
+![Index Finger Right](Cropped_Fingerprints/Index-Finger_Right_processed_0.jpg)
+![Index Finger Left](Cropped_Fingerprints/Index-Finger_left_processed_1.jpg)
+![Little Finger Right](Cropped_Fingerprints/Little-Finger_Right_processed_2.jpg)
+![Little Finger Left](Cropped_Fingerprints/Little-Finger_left_processed_2.jpg)
+![Middle Finger Right](Cropped_Fingerprints/Middle-Finger_Right_processed_1.jpg)
+![Middle Finger Right 4](Cropped_Fingerprints/Middle-Finger_Right_processed_4.jpg)
+![Middle Finger Left](Cropped_Fingerprints/Middle-Finger_left_processed_0.jpg)
+![Ring Finger Left](Cropped_Fingerprints/Ring-Finger_left_processed_3.jpg)
+![Thumb Right](Cropped_Fingerprints/Thumb_Right_processed_0.jpg)
 
 ### Extracted Fingerprints
 
 The following images showcase the extracted fingerprint features:
 
-![Extracted Fingerprint 1](https://chatgpt.com/c/Extracted_Fingerprints/extracted_fingerprint1.png)
-![Extracted Fingerprint 2](https://chatgpt.com/c/Extracted_Fingerprints/extracted_fingerprint2.png)
-![Extracted Fingerprint 3](https://chatgpt.com/c/Extracted_Fingerprints/extracted_fingerprint3.png)
-![Extracted Fingerprint 4](https://chatgpt.com/c/Extracted_Fingerprints/extracted_fingerprint4.png)
-![Extracted Fingerprint 5](https://chatgpt.com/c/Extracted_Fingerprints/extracted_fingerprint5.png)
+![Extracted Index Finger Left](Extrected_Fingerprints/extrected_Index-Finger_Left_1_gray.jpg)
+![Extracted Index Finger Right](Extrected_Fingerprints/extrected_Index-Finger_Right_0_gray.jpg)
+![Extracted Little Finger Left](Extrected_Fingerprints/extrected_Little-Finger_Left_2_gray.jpg)
+![Extracted Middle Finger Left](Extrected_Fingerprints/extrected_Middle-Finger_Left_0_gray.jpg)
+![Extracted Middle Finger Right](Extrected_Fingerprints/extrected_Middle-Finger_Right_1_gray.jpg)
+![Extracted Middle Finger Right 4](Extrected_Fingerprints/extrected_Middle-Finger_Right_4_gray.jpg)
+![Extracted Ring Finger Left](Extrected_Fingerprints/extrected_Ring-Finger_Left_3_gray.jpg)
+![Extracted Ring Finger Right](Extrected_Fingerprints/extrected_Ring-Finger_Right_3_gray.jpg)
 
 ## Installation
 
@@ -52,7 +59,7 @@ pip install "ultralytics<=8.3.40" supervision roboflow opencv-python
 
 ## Dataset Preparation
 
-Download the dataset using  **Roboflow** :
+Download the dataset using **Roboflow**:
 
 ```python
 from roboflow import Roboflow
@@ -89,20 +96,20 @@ print(metrics)
 
 ## Results
 
-* Successfully trained **YOLO v11** to detect fingertips with high accuracy.
-* Extracted and enhanced **fingerprint images** using  **OpenCV** .
-* Achieved robust performance in  **biometric feature extraction** .
+- Successfully trained **YOLO v11** to detect fingertips with high accuracy.
+- Extracted and enhanced **fingerprint images** using **OpenCV**.
+- Achieved robust performance in **biometric feature extraction**.
 
 ## Future Improvements
 
-* Experiment with **alternative YOLO architectures** for improved accuracy.
-* Enhance fingerprint feature extraction using  **deep learning-based segmentation** .
-* Integrate with **biometric authentication systems** for real-world applications.
+- Experiment with **alternative YOLO architectures** for improved accuracy.
+- Enhance fingerprint feature extraction using **deep learning-based segmentation**.
+- Integrate with **biometric authentication systems** for real-world applications.
 
 ## Contributors
 
-* **[Your Name]** - Research & Implementation
+- **SMH125** - Research & Implementation
 
 ## License
 
-This project is open-source and available under the [MIT License](https://chatgpt.com/c/LICENSE).
+This project is open-source and available under the [MIT License](LICENSE).
